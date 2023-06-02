@@ -16,3 +16,17 @@
     }
   }
 }
+
+
+.smimmer-card {
+  background-size: 500%;
+  animation: shimmer 1s linear infinite reverse;
+}
+@keyframes shimmer {
+  from {
+    background-position: 0;
+  }
+  to {
+    background-position: 100%;
+  }
+}

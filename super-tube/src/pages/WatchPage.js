@@ -3,6 +3,9 @@ import { useSearchParams } from 'react-router-dom'
 import { useDispatch } from 'react-redux'
 import { closeMenu } from '../utils/appSlice'
 import LiveChat from '../components/LiveChat'
+import SimilarVideos from '../components/SimilarVideos'
+import CommentsList from '../components/CommentsList'
+import { commentsList } from '../utils/helper'
 
 const WatchPage = () => {
   const [searchParams] = useSearchParams()
@@ -15,10 +18,10 @@ const WatchPage = () => {
   }, [dispatch])
 
   return (
-    <div className='py-4 px-4 md:px-7 flex w-full'>
-      <div className='flex grow flex-col md:flex-row gap-2'>
+    <div className='flex w-full flex-col gap-8 px-4 py-4 md:px-7'>
+      <div className='flex grow flex-col gap-2 md:flex-row'>
         <iframe
-          className='w-full aspect-video max-w-[720px]'
+          className='aspect-video w-full max-w-[720px]'
           // width='640'
           // height='360'
           src={`https://www.youtube.com/embed/${videoId}`}
@@ -28,6 +31,13 @@ const WatchPage = () => {
           autoPlay
         />
         <LiveChat />
+      </div>
+      <div className='flex flex-col gap-2 md:flex-row'>
+        <div className='h-80 w-full md:w-3/5 p-2'>
+          <h2 className='font-bold mb-2'>Comments:</h2>
+          <CommentsList commentsList={commentsList}/>
+        </div>
+        <SimilarVideos videoId={videoId} />
       </div>
     </div>
   )

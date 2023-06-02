@@ -1,3 +1,5 @@
+import { v4 as uuidv4 } from 'uuid'
+
 const nameList = [
   'Time',
   'Past',
@@ -216,4 +218,234 @@ export const exploreSection = [
   { name: 'Sports', icon: '' },
   { name: 'Learning', icon: '' },
   { name: 'Fashion & Beauty', icon: '' },
+]
+
+export const commentsList = [
+  {
+    id: uuidv4(),
+    name: name(),
+    comments: 'Nice video...',
+    replies: [
+      {
+        id: uuidv4(),
+        name: name(),
+        comments: 'Nice video...',
+        replies: [],
+      },
+      {
+        id: uuidv4(),
+        name: name(),
+        comments: 'Such an awesome content😍😍',
+        replies: [
+          {
+            id: uuidv4(),
+            name: name(),
+            comments: '😍😍😍😍😍😍',
+            replies: [
+              {
+                id: uuidv4(),
+                name: name(),
+                comments: randomMessage(),
+                replies: [
+                  {
+                    id: uuidv4(),
+                    name: name(),
+                    comments: 'This was amazing.',
+                    replies: [
+                      {
+                        id: uuidv4(),
+                        name: name(),
+                        comments: randomMessage(),
+                        replies: [],
+                      },
+                    ],
+                  },
+                  {
+                    id: uuidv4(),
+                    name: name(),
+                    comments: '😍😍😍😍😍😍',
+                    replies: [],
+                  },
+                ],
+              },
+            ],
+          },
+          {
+            id: uuidv4(),
+            name: name(),
+            comments: randomMessage(),
+            replies: [
+              {
+                id: uuidv4(),
+                name: name(),
+                comments: randomMessage(),
+                replies: [
+                  {
+                    id: uuidv4(),
+                    name: name(),
+                    comments: randomMessage(),
+                    replies: [],
+                  },
+                  {
+                    id: uuidv4(),
+                    name: name(),
+                    comments: randomMessage(),
+                    replies: [],
+                  },
+                ],
+              },
+              {
+                id: uuidv4(),
+                name: name(),
+                comments: randomMessage(),
+                replies: [],
+              },
+            ],
+          },
+          {
+            id: uuidv4(),
+            name: name(),
+            comments: randomMessage(),
+            replies: [],
+          },
+        ],
+      },
+      {
+        id: uuidv4(),
+        name: name(),
+        comments: 'This was amazing.',
+        replies: [],
+      },
+      {
+        id: uuidv4(),
+        name: name(),
+        comments: '😍😍😍😍😍😍',
+        replies: [],
+      },
+      {
+        id: uuidv4(),
+        name: name(),
+        comments: randomMessage(),
+        replies: [],
+      },
+      {
+        id: uuidv4(),
+        name: name(),
+        comments: randomMessage(),
+        replies: [],
+      },
+    ],
+  },
+  {
+    id: uuidv4(),
+    name: name(),
+    comments: 'Such an awesome content😍😍',
+    replies: [
+      {
+        id: uuidv4(),
+        name: name(),
+        comments: 'This was amazing.',
+        replies: [],
+      },
+      {
+        id: uuidv4(),
+        name: name(),
+        comments: '😍😍😍😍😍😍',
+        replies: [
+          {
+            id: uuidv4(),
+            name: name(),
+            comments: 'This was amazing.',
+            replies: [
+              {
+                id: uuidv4(),
+                name: name(),
+                comments: 'This was amazing.',
+                replies: [
+                  {
+                    id: uuidv4(),
+                    name: name(),
+                    comments: 'This was amazing.',
+                    replies: [],
+                  },
+                ],
+              },
+            ],
+          },
+        ],
+      },
+      {
+        id: uuidv4(),
+        name: name(),
+        comments: randomMessage(),
+        replies: [],
+      },
+    ],
+  },
+  {
+    id: uuidv4(),
+    name: name(),
+    comments: 'This was amazing.',
+    replies: [],
+  },
+  {
+    id: uuidv4(),
+    name: name(),
+    comments: '😍😍😍😍😍😍',
+    replies: [],
+  },
+  {
+    id: uuidv4(),
+    name: name(),
+    comments: randomMessage(),
+    replies: [],
+  },
+  {
+    id: uuidv4(),
+    name: name(),
+    comments: randomMessage(),
+    replies: [],
+  },
+  {
+    id: uuidv4(),
+    name: name(),
+    comments: randomMessage(),
+    replies: [],
+  },
+  {
+    id: uuidv4(),
+    name: name(),
+    comments: randomMessage(),
+    replies: [],
+  },
+  {
+    id: uuidv4(),
+    name: name(),
+    comments: randomMessage(),
+    replies: [],
+  },
+  {
+    id: uuidv4(),
+    name: name(),
+    comments: randomMessage(),
+    replies: [],
+  },
+  {
+    id: uuidv4(),
+    name: name(),
+    comments: randomMessage(),
+    replies: [],
+  },
+  {
+    id: uuidv4(),
+    name: name(),
+    comments: randomMessage(),
+    replies: [],
+  },
+  {
+    id: uuidv4(),
+    name: name(),
+    comments: randomMessage(),
+    replies: [],
+  },
 ]
