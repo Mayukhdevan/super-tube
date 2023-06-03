@@ -25,7 +25,7 @@ const VideoCardItem = ({ videoData }) => {
           src={
             isMouseInn && videoData?.movingThumbnails
               ? videoData?.movingThumbnails[0]?.url
-              : videoData?.thumbnails[1]?.url
+              : videoData?.thumbnails[1]?.url || videoData?.thumbnails[0]?.url
           }
           alt='video'
         />
