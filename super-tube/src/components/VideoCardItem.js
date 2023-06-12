@@ -5,7 +5,7 @@ const VideoCardItem = ({ videoData }) => {
   const [isMouseInn, setIsMouseInn] = useState(false)
   const timerRef = useRef(null)
   const views = videoData?.stats?.views || videoData?.stats?.viewers
-  console.log(videoData)
+  // console.log(videoData)
   return (
     <Link to={`/watch?v=${videoData.videoId}`}>
       <li
@@ -28,6 +28,7 @@ const VideoCardItem = ({ videoData }) => {
               : videoData?.thumbnails[1]?.url || videoData?.thumbnails[0]?.url
           }
           alt='video'
+          loading='lazy'
         />
         <div className='flex items-start gap-2'>
           <img
